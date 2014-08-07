@@ -9,7 +9,6 @@ GO Dialy Application
 # Installation
 
 ```
-$ go get github.com/codegangsta/gin
 $ go get github.com/kr/godep
 $ godep restore
 ```
@@ -17,6 +16,7 @@ $ godep restore
 # Run
 
 ```
+$ go get github.com/codegangsta/gin
 $ gin run server.go   # go run server.go
 ```
 
@@ -26,5 +26,7 @@ $ gin run server.go   # go run server.go
 - [Gomega](http://github.com/onsi/gomega): Matcher library
 
 ```
+$ go get github.com/onsi/ginkgo/ginkgo
+$ go get github.com/onsi/gomega
 $ go test
 ```
