@@ -9,6 +9,6 @@ func main() {
 }
 
 func top(params martini.Params) (int, string) {
-  return 200, "Go Diary!"
+  return 200, "Go Daily!"
 }
 

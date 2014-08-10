@@ -1,4 +1,3 @@
-//package go_dialy_app_test
 package main
 
 import (
@@ -7,11 +6,11 @@ import (
 )
 
 var _ = Describe("Dialy", func() {
-  Context("Show Top", func() {
+  Context("top()", func() {
     It("returns a 200 Status Code", func() {
       Request("GET", "/", top)
-      Expect(recorder.Code).To(Equal(200))
-      //Expect(recorder.Body).To(ContainSubstring("Dialya"))
+      Expect(response.Code).To(Equal(200))
+      Expect(response.Body).To(ContainSubstring("Daily"))
     })
   })
 })
