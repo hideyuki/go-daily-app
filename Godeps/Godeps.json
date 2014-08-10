@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/hideyuki/go-dialy-app",
+	"ImportPath": "github.com/hideyuki/go-daily-app",
 	"GoVersion": "go1.3",
 	"Deps": [
 		{
@@ -11,6 +11,16 @@
 			"ImportPath": "github.com/go-martini/martini",
 			"Comment": "v1.0-35-gab12482",
 			"Rev": "ab1248205f79d286d7ce99c8b69be576e6b5eb11"
+		},
+		{
+			"ImportPath": "github.com/onsi/ginkgo",
+			"Comment": "v1.1.0",
+			"Rev": "aa7870df5380d9da6904a29ba19e208694e0d0c1"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega",
+			"Comment": "v1.0",
+			"Rev": "a78ae492d53aad5a7a232d0d0462c14c400e3ee7"
 		}
 	]
 }
