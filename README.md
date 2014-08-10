@@ -32,6 +32,7 @@ $ go get github.com/onsi/gomega
 $ go test
 ```
 
+---
 
 # Docker
 
@@ -43,11 +44,23 @@ This repository connect the [Docker Hub repository](https://registry.hub.docker.
 $ docker build --rm -t hideyuki/go-daily:0.1 ./
 ``` 
 
+With no-cache flag
+
+```
+$ docker build --rm --no-cache -t hideyuki/go-daily:0.1 ./
+``` 
+
 ## Run
 
 ```
-$ docker run -i -t -p 13000:3000 -p 10022:22 --name daily hideyuki/go-daily:0.1
+$ docker run -i -t -p 13000:3000 -p 10022:22 --name daily hideyuki/go-daily:0.1 /bin/bash
 [martini] listening on :3000 (development)
+```
+
+As daemon
+
+```
+$ docker run -d -p 13000:3000 -p 10022:22 --name daily hideyuki/go-daily:0.1
 ```
 
 ## Push to Docker Hub

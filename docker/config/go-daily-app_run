@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /usr/daily/app/go-daily-app
+exec go run server.go
